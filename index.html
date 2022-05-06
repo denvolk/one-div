@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <link rel="stylesheet" type="text/css">
+  <link href="css/style.css" media="all" rel="stylesheet" type="text/css">
+</head>
+<body>
+<header>
+  <nav class="menu">
+    <ul>
+      <li><a href="javascript:scrollMain('home')"><span id="span-menu-home">Home</span></a></li>
+      <li><a href="javascript:scrollMain('about')"><span id="span-menu-about">About</span></a></li>
+      <li><a href="javascript:scrollMain('skills')"><span id="span-menu-skills">Skills</span></a></li>
+      <li><a href="javascript:scrollMain('portfolio')"><span id="span-menu-portfolio">Portfolio</span></a></li>
+    </ul>
+  </nav>
+</header>
+<hr id="hr-line">
+<main class="main-content">
+  <div class="lang-selector">
+    <a href="javascript:changeLanguage('ru')"><span id="ruL">RU</span></a>
+    <a href="javascript:changeLanguage('eng')"><span id="engL">ENG</span></a>
+  </div>
+  <div class="main-field">
+    <div class="buttons-container">
+      <label class="radio-form">
+        <input type="radio" name="radio" id="radio-1" value="home" checked onclick="selectInfo('home')">
+      </label>
+      <label class="radio-form">
+        <input type="radio" name="radio" id="radio-2" value="about" onclick="selectInfo('about')">
+      </label>
+      <label class="radio-form">
+        <input type="radio" name="radio" id="radio-3" value="skills" onclick="selectInfo('skills')">
+      </label>
+      <label class="radio-form">
+        <input type="radio" name="radio" id="radio-4" value="portfolio" onclick="selectInfo('portfolio')">
+      </label>
+    </div>
+    <div class="slide-main">
+      <div class="img-container">
+        <img src="pics/wall.png" alt="wall.png">
+        <span id="span-first-name">Denis</span>
+        <span id="span-last-name">Volkhin</span>
+        <span id="span-info-first">Intern Frontend Developer</span>
+        <span id="span-info-second">23 years old, Saint-Petersburg</span>
+      </div>
+    </div>
+    <div class="slide-about">
+      <div class="img-container">
+        <img src="pics/wall.png" alt="wall.png">
+        <span id="span-about">About me</span>
+        <span id="span-about-part-one">Hi, I'm Denis – Intern Frontend Developer from Saint-Petersburg.</span>
+        <span id="span-about-part-two">I'm interested in frontend development and everything connected with it.</span>
+        <span id="span-about-part-three">I'm studying at courses "Program engineering"</span>
+        <span id="span-about-part-four">in IT-Academy.</span>
+        <span id="span-about-part-five">Ready to implement excellent projects</span>
+        <span id="span-about-part-six">with wonderful people.</span>
+      </div>
+    </div>
+    <div class="slide-skills">
+      Навыки
+    </div>
+    <div class="slide-portfolio">
+      <div class="portfolio-one">
+        Сайт один
+      </div>
+      <div class="portfolio-two">
+        Сайт два
+      </div>
+      <div class="portfolio-three">
+        Сайт три
+      </div>
+    </div>
+  </div>
+</main>
+<footer>
+  <section class="contacts">
+    <div class="footer-message">
+      <!--<h1><span id="span-contacts">Contacts</span></h1>-->
+      <p><span id="span-contacts-p-first">Want to know more or just chat?</span>
+        <span id="span-contacts-p-second">You are welcome!</span>
+      </p>
+      <a href="mailto:denvolk242@gmail.com?subject=Mail%20denvolk"><span id="span-button">Send message</span></a>
+      <!--<button><a href="mailto:denvolk242@gmail.com?subject=Mail%20denvolk"></a><span id="span-button">Send message</span></a></button>-->
+      <!--onclick="window.open("mailto:denvolk242@gmail.com?subject=Mail%20denvolk")"-->
+    </div>
+    <div class="contact-pics">
+      <a href="https://vk.com/denv0lk" target="_blank" rel="noopener noreferrer"><img src="pics/VKBlack.svg"
+                                                                                      alt="VK"
+                                                                                      style="height: 48px;"></a>
+      <a href="https://discordapp.com/users/211199388993716224" target="_blank" rel="noopener noreferrer"><img
+        src="pics/DiscordBlack.svg" alt="Discord" style="height: 48px;"></a>
+      <a href="https://github.com/denvolk" target="_blank" rel="noopener noreferrer"><img src="pics/GitHubDark.png"
+                                                                                          alt="GitHub"
+                                                                                          style="height: 48px;"></a>
+      <p class="footer-info"><span id="span-footer-first">Add me on</span>
+        <span id="span-footer-second">VK, Discord, GitHub</span>
+      </p>
+    </div>
+  </section>
+</footer>
+<script type="text/javascript" src="js/myScript.js"></script>
+</body>
+</html>
