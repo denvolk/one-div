@@ -40,7 +40,7 @@ var toogle = function (elem)    {
 
 let text;
 
-fetch("https://raw.githubusercontent.com/denvolk/test-site/master/json/text.json")
+fetch("https://raw.githubusercontent.com/denvolk/one-div/master/json/text.json")
 //fetch("http://localhost:63342/one-div/json/text.json")
     .then(response => response.json())
     .then(data => text = data);
